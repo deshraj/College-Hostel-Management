@@ -7,12 +7,12 @@ from django.views.generic import RedirectView
 from django.views.generic import TemplateView
 from django.core.urlresolvers import reverse
 import settings
-from django.contrib import admin
-admin.autodiscover()
+# from django.contrib import admin
+# admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'hostelMgmt.views.home', name='home'),
-    url(r'^allotment/', include('allot.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', 'allot.home', name='home'),
+    # url(r'^allotment/', include('allot.urls')),
+    # url(r'^admin/', include(admin.site.urls)),
 )
