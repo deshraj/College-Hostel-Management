@@ -11,9 +11,20 @@ from django.template.loader import render_to_string, get_template
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.template import Context
+from datetime import datetime
 import random,string
-import settings
+# import settings
+# import datetime
 # from pyUrl.models import * 
 # Create your views here.
-def home(request):
-	return render_to_response('allot.html')
+def checktime(request):
+	# time = datatime.datetimenow()
+	# print time
+	time = 1
+	allotmentTime = time
+	if time >= allotmentTime:
+		return HttpResponse("<h1>The allotment will start on 25th July 2015</h1>")
+		# return render_to_response('allot.html')
+	else: 
+		return HttpResponse("<h1>The allotment will start on 25th July 2015</h1>")
+

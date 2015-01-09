@@ -6,13 +6,12 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import RedirectView
 from django.views.generic import TemplateView
 from django.core.urlresolvers import reverse
-import settings
+import allot.views# import settings
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    url(r'^$', 'allot.home', name='home'),
+    url(r'^$', 'allot.views.checktime', name='checktime'),
     # url(r'^allotment/', include('allot.urls')),
     # url(r'^admin/', include(admin.site.urls)),
 )

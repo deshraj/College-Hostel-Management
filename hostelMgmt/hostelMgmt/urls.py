@@ -6,7 +6,9 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import RedirectView
 from django.views.generic import TemplateView
 from django.core.urlresolvers import reverse
-import settings
+# import settings
+# import allot.urls
+from allot.urls import * 
 from django.contrib import admin
 admin.autodiscover()
 
