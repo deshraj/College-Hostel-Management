@@ -16,4 +16,4 @@ import random,string
 # from pyUrl.models import * 
 # Create your views here.
 def home(request):
-	return HttpResponse("<h1>GoTO /allotment for the allotment</h1>")
+	return HttpResponse("<h3><a href='http://localhost:8000/allotment'>Click Here</a>  for the allotment</h3>")

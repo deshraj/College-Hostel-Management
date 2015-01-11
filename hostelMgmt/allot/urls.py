@@ -12,6 +12,7 @@ import allot.views# import settings
 
 urlpatterns = patterns('',
     url(r'^$', 'allot.views.checktime', name='checktime'),
+    url(r'boys', 'allot.views.allotmentform', name='allotmentform'),
     # url(r'^allotment/', include('allot.urls')),
     # url(r'^admin/', include(admin.site.urls)),
 )

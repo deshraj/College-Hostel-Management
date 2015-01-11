@@ -79,7 +79,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+STATIC_ROOT= "/home/deshraj/Documents/College-Hostel-Management/static/"
 STATIC_URL = '/static/'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
@@ -90,7 +90,7 @@ TEMPLATE_LOADERS = (
 
 TEMPLATE_DIRS = (
     os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), \
-        'pyUrl/templates')
+        'hostelMgmt/templates')
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
