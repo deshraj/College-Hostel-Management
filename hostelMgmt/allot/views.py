@@ -11,7 +11,7 @@ from django.template.loader import render_to_string, get_template
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.template import Context
-from datetime import datetime
+from datetime import datetime,timedelta
 import random,string
 # import settings
 # import datetime
@@ -28,3 +28,11 @@ def checktime(request):
 	else: 
 		return HttpResponse("<h1>The allotment will start on 25th July 2015</h1>")
 
+def submitfor(request):
+	if request.POST:
+		name = request.POST['name']
+		name = request.POST['name']
+		name = request.POST['name']
+		name = request.POST['name']
+		name = request.POST['name']
+		return render_to_response('allotmentForm.html')
